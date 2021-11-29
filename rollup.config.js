@@ -4,6 +4,7 @@ import commonjs from "@rollup/plugin-commonjs";
 import typescript from "rollup-plugin-typescript2";
 import postcss from "rollup-plugin-postcss";
 import copy from "rollup-plugin-copy";
+import { babel } from '@rollup/plugin-babel';
 
 const packageJson = require("./package.json");
 
@@ -25,6 +26,7 @@ export default {
     peerDepsExternal(),
     resolve(),
     commonjs(),
+    babel({ babelHelpers: 'bundled', "presets": ["@babel/preset-react"] }),
     typescript({ useTsconfigDeclarationDir: true }),
     postcss(),
     copy({
