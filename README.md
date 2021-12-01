@@ -18,7 +18,7 @@ It also features:
 - [Storybook](https://storybook.js.org/) to help you create and show off your components
 - [Jest](https://jestjs.io/) and [React Testing Library](https://github.com/testing-library/react-testing-library) enabling testing of the components
 
-[Check out here to see the component library in action ▸](https://manisuec.github.io/ts-react-lib-starter/)
+[Check out here to see the component library in action ▸](https://manisuec.github.io/react-ts-lib-starter/)
 
 This starter kit also includes template for [CONTRIBUTING](CONTRIBUTING.md).
 

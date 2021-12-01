@@ -16,7 +16,7 @@
     "build-storybook": "build-storybook",
     "prepublishOnly": "npm run build",
     "predeploy": "npm run build-storybook",
-    "deploy-storybook": "gh-pages -d storybook-static"
+    "deploy-storybook": "npm run build-storybook && pregh-pages -d storybook-static"
   },
   "repository": {
     "type": "git",
