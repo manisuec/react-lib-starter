@@ -5,10 +5,21 @@ export default {
   title: "TestComponent"
 };
 
+const Content = () => {
+  return (
+    <span>
+      {'forked from '}
+      <a href="https://github.com/HarveyD/react-component-library" target="_blank" className="link">
+        {'https://github.com/HarveyD/react-component-library'}
+      </a>
+    </span>
+  )
+}
+
 export const WithText = () => (
   <TestComponent
     heading="I am a test component"
-    content={<h2>Made with love by Harvey</h2>}
+    content={<Content />}
   />
 );
 
