@@ -13,13 +13,14 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "storybook": "start-storybook -p 6006",
-    "storybook:export": "build-storybook",
-    "generate": "node ./util/create-component",
-    "prepublishOnly": "npm run build"
+    "build-storybook": "build-storybook",
+    "prepublishOnly": "npm run build",
+    "predeploy": "npm run build-storybook",
+    "deploy-storybook": "gh-pages -d storybook-static"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HarveyD/react-component-library.git"
+    "url": "git+https://github.com/manisuec/react-ts-lib-starter.git"
   },
   "keywords": [
     "React",
@@ -30,12 +31,12 @@
     "Sass",
     "Storybook"
   ],
-  "author": "Harvey Delaney",
+  "author": "Manish Prasad",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/HarveyD/react-component-library/issues"
+    "url": "https://github.com/manisuec/react-ts-lib-starter/issues"
   },
-  "homepage": "https://github.com/HarveyD/react-component-library#readme",
+  "homepage": "https://manisuec.github.io/react-ts-lib-starter/",
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
@@ -55,7 +56,6 @@
     "@types/react-dom": "^17.0.11",
     "babel-loader": "^8.2.3",
     "babel-preset-react-app": "^10.0.0",
-    "gh-pages": "^3.2.3",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.3.1",
     "node-sass": "^6.0.1",

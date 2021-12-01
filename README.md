@@ -20,6 +20,7 @@ It also features:
 
 [Check out here to see the component library in action ▸](https://manisuec.github.io/ts-react-lib-starter/)
 
+This starter kit also includes template for [CONTRIBUTING](CONTRIBUTING.md).
 
 ## Credits
 
