@@ -29,7 +29,28 @@ I have updated the pacakge versions and some more customisation to suit my style
 
 
 ## Development
+I recommend to use below folder structure for better scalability
 
+```
+src
+ └──├── assets
+    │   └── scss
+    │       ├── typography.scss
+    │       └── variables.scss
+    ├── components
+    │   └── TestComponent
+    │       ├── TestComponent.scss
+    │       ├── TestComponent.stories.tsx
+    │       ├── TestComponent.test.tsx
+    │       ├── TestComponent.tsx
+    │       ├── TestComponent.types.ts
+    │       └── index.ts
+    ├── hooks
+    ├── index.ts
+    ├── services
+    ├── store
+    └── utils
+```
 ### Testing
 
 ```
